@@ -1,5 +1,8 @@
 # chatgpt-retrieval
 
+Simple Test for my own to see how it works, based of the following youtube tutorial.
+
+
 Simple script to use ChatGPT on your own files.
 
 Here's the [YouTube Video](https://youtu.be/9AXP7tCI9PI).
