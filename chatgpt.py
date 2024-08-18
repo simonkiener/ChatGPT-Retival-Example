@@ -1,8 +1,6 @@
 import os
 import sys
 
-#import openai
-#from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_openai import OpenAIEmbeddings
@@ -42,7 +40,8 @@ while True:
     query = input("Prompt: ")
   if query in ['quit', 'q', 'exit']:
     sys.exit()
-  result = chain({"question": query, "chat_history": chat_history})
+  #result = chain({"question": query, "chat_history": chat_history})
+  result = chain.invoke({"question": query, "chat_history": chat_history})
   print(result['answer'])
 
   chat_history.append((query, result['answer']))
